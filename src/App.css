@@ -36,3 +36,25 @@
     transform: rotate(360deg);
   }
 }
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.scale-up {
+  transform: scale(0.9);
+  transition: transform 0.3s;
+}
+
+.scale-up:hover {
+  transform: scale(1);
+}
